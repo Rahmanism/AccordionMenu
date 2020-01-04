@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', (evt) => {
             if (li.querySelector('ul')) {
                 li.classList.add('submenu-parent')
                 let arrowImage = document.createElement('img')
-                arrowImage.src = 'double-chevron-down.png'
+                arrowImage.src = '/images/double-chevron-down.png'
                 arrowImage.classList.add('submenu-sign-image')
                 let arrowImageSize = li.clientHeight * .8
                 arrowImage.style.height = arrowImageSize + 'px'
@@ -31,12 +31,12 @@ document.addEventListener('DOMContentLoaded', (evt) => {
             subMenu.classList.remove('show-menu')
             setTimeout(() => { subMenu.style.maxHeight = 0 }, 100)
             subMenu.parentElement.querySelector(
-                'img.submenu-sign-image').src = 'double-chevron-down.png'
+                'img.submenu-sign-image').src = '/images/double-chevron-down.png'
         } else {
             subMenu.classList.add('show-menu')
             subMenu.style.maxHeight = subMenu.scrollHeight + 'px'
             subMenu.parentElement.querySelector(
-                'img.submenu-sign-image').src = 'double-chevron-up.png'
+                'img.submenu-sign-image').src = '/images/double-chevron-up.png'
             setTimeout(() => { subMenu.style.maxHeight = 'fit-content' }, 500)
         }
     }

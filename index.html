@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/style/style.css" />
     <style>
         .container {
             width: 300px;
@@ -16,8 +16,9 @@
 
 <body>
     <div class="container" id="menuContainer">
-        <input type="hidden" id="menuTreeUrl" value="http://somedomain.com/list-json/" />
-        <input type="hidden" id="baseItemLinkUrl" value="http://somedomain.com/?linkId=">
+        <!-- value="http://somedomain.com/list-json/" for menuTreeUrl -->
+        <input type="hidden" id="menuTreeUrl" value="" />
+        <input type="hidden" id="baseItemLinkUrl" value="http://somedomain1.com/?linkId=">
         <div class="accordion-menu-container">
             <ul>
                 <li>
@@ -53,7 +54,7 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="/scripts/script.js"></script>
 </body>
 
 </html>
