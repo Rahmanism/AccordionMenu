@@ -1,0 +1,61 @@
+html {
+    direction: rtl;
+}
+
+:root {
+    --accordion-main-color: #eeedea;
+    --accordion-lighter-color: #f4f4f2;
+    --accordion-darker-color: #e6e6df;
+}
+
+.accordion-menu-container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.accordion-menu-container div, ul, li, span, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .4s linear;
+    text-decoration: none;
+    clear: both;
+}
+
+.accordion-menu-container li {
+    list-style: none;
+    display: block;
+    padding: 5px 10px;
+    background-color: var(--accordion-main-color);
+    border: 1px solid var(--accordion-lighter-color);
+}
+
+.accordion-menu-container-horizontal li {
+    display: inline-block;
+}
+
+.accordion-menu-container li>a {
+    display: block;
+    color: inherit;
+}
+
+.accordion-menu-container li>ul {
+    max-height: 0;
+    overflow: hidden;
+    background-color: var(--accordion-main-color);
+}
+
+.accordion-menu-container .show-menu {
+}
+
+.accordion-menu-container .submenu-parent {
+    background-color: var(--accordion-darker-color);
+}
+
+.accordion-menu-container .submenu-sign-image {
+    position: relative;
+    cursor: pointer;
+    float: left;
+    padding: 5px;
+}

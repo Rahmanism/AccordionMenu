@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        .container {
+            width: 300px;
+        }
+    </style>
+    <title>Accordion Menu - منوی آکاردئونی</title>
+</head>
+
+<body>
+    <div class="container" id="menuContainer">
+        <input type="hidden" id="menuTreeUrl" value="http://somedomain.com/list-json/" />
+        <input type="hidden" id="baseItemLinkUrl" value="http://somedomain.com/?linkId=">
+        <div class="accordion-menu-container">
+            <ul>
+                <li>
+                    <a href="#">گزینه ۱ ...</a>
+                    <ul>
+                        <li><a href="#">زیرمنوی ۱</a></li>
+                        <li><a href="#">زیرمنوی ۲</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">گزینه ۲</a></li>
+                <li>
+                    <a href="#">گزینه ۳...</a>
+                    <ul>
+                        <li>
+                            <a href="#">۳ - زیرگزینه 1</a>
+                            <ul>
+                                <li><a href="">۳-۱ زیرگزینه ۱</a></li>
+                                <li>
+                                    <a href="">۳-۲ زیرگزینه ۲</a>
+                                    <ul>
+                                        <li><a href="">۳-۲-۱ زیرگزینه ۱</a></li>
+                                        <li><a href="">۳-۲-۲ زیرگزینه ۲</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">۳-۳ زیرگزینه ۳</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">۳ - زیرگزینه 2</a></li>
+                        <li><a href="#">۳ - زیرگزینه 3</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
